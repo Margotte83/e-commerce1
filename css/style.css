@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    font-family:'Raleway', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+/*Navigation bar*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+nav h1{
+    font-size: 20px;
+}
+nav .tabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav .tabs p{
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav .tabs input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+
+}
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+
+}
+header button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+}
+/*main section*/
+.main{
+    margin:20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/*cards*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cards .card{
+cursor:pointer;
+margin-right: 20px;
+}
+.cards .card img{
+    width: 350px;
+}
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards .card .card-body p{
+    margin-top: -10px;
+}
+
+.second-main .video{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 80px;
+    width: 90%;
+}
+.second-main .video iframe{
+    border:none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/*Footer*/
+footer{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer .social-media{
+    display: flex;
+
+}
+footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    text-align:center;
+    width:20px;
+    cursor:pointer;
+}
+/*Responsive*/
+@media screen and (max-width:640px){
+    nav .tabs link{
+        display: none;
+    }
+    .cards .card{
+        margin-left: 20px;
+    }
+    .cards .card img{
+        width: 300px;
+    }
+}
+
+
+
